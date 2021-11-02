@@ -5,12 +5,15 @@ using UnityEngine;
 public class FancyBall : Ball
 {
     //JF: FancyBall should live longer than Ball and change into more colors.
+    //Inheritance
+    //Polymorphism
     public override void Start()
     {
         base.Start();
         SecondsToDestruct = 10;
     }
 
+    //Polymorphism
     public override void Flash()
     {
         base.Flash();

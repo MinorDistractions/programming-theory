@@ -8,6 +8,8 @@ public class Ball : MonoBehaviour
     private Rigidbody ballRB;
     private Renderer ballRenderer;
     private float forceLevel;
+
+    //Encapsulation
     private int secondsToDestruct;
     protected int SecondsToDestruct 
     {
@@ -32,6 +34,7 @@ public class Ball : MonoBehaviour
         Debug.Log(gameObject.name);
     }
 
+    //Abstraction
     protected void ChangeColor(Color color)
     {
         ballRenderer.material.SetColor("_Color", color);
